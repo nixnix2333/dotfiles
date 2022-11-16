@@ -9,4 +9,12 @@ return require('packer').startup(function(use)
 	  config = function() require("nvim-autopairs").setup {} end
   }
 
+  -- term
+  use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+	  require("toggleterm").setup {
+		  open_mapping = [[<c-t>]],
+		  direction = 'float',
+	  }
+  end}
+
 end)
