@@ -17,4 +17,8 @@ return require('packer').startup(function(use)
 	  }
   end}
 
+  -- color scheme
+  use 'bluz71/vim-nightfly-colors'
+  vim.cmd [[colorscheme nightfly]]
+
 end)
